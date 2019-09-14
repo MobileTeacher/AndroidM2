@@ -13,3 +13,8 @@ As perguntas serão armazenadas em arquivos de texto na memória do dispositivo 
 - Navegação para outras aplicações com intents implícitas. [Docs](https://developer.android.com/guide/components/intents-common)
 - Persistência em arquivos de texto. [Docs](https://developer.android.com/training/data-storage/files/internal?hl=pt-br)
 - Noções sobre multithreading. [Docs](https://developer.android.com/reference/kotlin/android/os/AsyncTask?hl=en)
+
+
+EXTRA:
+
+- [Parcelable](https://pt.stackoverflow.com/questions/38492/quando-e-como-implementar-o-parcelable-vs-serializable) 
