@@ -3,6 +3,7 @@ package br.com.programacaodinamica.sabedenada
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import kotlinx.android.synthetic.main.activity_menu.*
 
 class MenuActivity : AppCompatActivity() {
@@ -16,6 +17,7 @@ class MenuActivity : AppCompatActivity() {
 
     fun setUpListeners(){
 
+        val playButton = findViewById<Button>(R.id.play_button)
 
         play_button.setOnClickListener {
             // Ir para tela de "Jogo do Quiz"

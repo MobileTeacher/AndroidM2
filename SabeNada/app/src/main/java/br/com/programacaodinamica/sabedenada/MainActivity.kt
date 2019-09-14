@@ -3,11 +3,18 @@ package br.com.programacaodinamica.sabedenada
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import br.com.programacaodinamica.sabedenada.model.question1
+import br.com.programacaodinamica.sabedenada.model.question2
+import br.com.programacaodinamica.sabedenada.model.question3
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    val questions = listOf(question1, question2, question3)
+    val questions = listOf(
+        question1,
+        question2,
+        question3
+    )
     var currentIndex = 0
     var selectedOption = -1
 

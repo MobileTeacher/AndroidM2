@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Toast
+import br.com.programacaodinamica.sabedenada.model.Question
 import kotlinx.android.synthetic.main.activity_add_question.*
 
 class AddQuestionActivity : AppCompatActivity() {

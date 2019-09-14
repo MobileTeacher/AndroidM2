@@ -1,4 +1,4 @@
-package br.com.programacaodinamica.sabedenada
+package br.com.programacaodinamica.sabedenada.model
 
 class Question(val text: String,
                val options: List<String>,
@@ -14,14 +14,20 @@ class Question(val text: String,
 }
 
 
-val question1 = Question("Quantos são os sólidos de Platão?",
+val question1 = Question(
+    "Quantos são os sólidos de Platão?",
     listOf("5", "10", "15", "20"),
-    0, "Matemática")
+    0, "Matemática"
+)
 
-val question2 = Question("Em que ano foi proclamada a República brasileira?",
+val question2 = Question(
+    "Em que ano foi proclamada a República brasileira?",
     listOf("1822", "1888", "1860", "1889"),
-    3, "História")
+    3, "História"
+)
 
-val question3 = Question("Qual timer está no topo?",
+val question3 = Question(
+    "Qual timer está no topo?",
     listOf("Santos", "Internacional", "Flamengo", "Santa Cruz"),
-    2, "Esportes")
+    2, "Esportes"
+)
