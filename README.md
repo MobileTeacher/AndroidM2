@@ -8,7 +8,7 @@ As perguntas serão armazenadas em arquivos de texto na memória do dispositivo 
 
 - Uso do Spinner (caixa de seleção). [Docs](https://developer.android.com/guide/topics/ui/controls/spinner)
 - Padrão de projeto Adapter. 
-- Listas e grids com RecyclerView. [Docs] (https://developer.android.com/guide/topics/ui/layout/recyclerview?hl=en)
+- Listas e grids com RecyclerView. [Docs](https://developer.android.com/guide/topics/ui/layout/recyclerview?hl=en)
 - Elementos personalizados para a lista.
 - Navegação para outras aplicações com intents implícitas. [Docs](https://developer.android.com/guide/components/intents-common)
 - Persistência em arquivos de texto. [Docs](https://developer.android.com/training/data-storage/files/internal?hl=pt-br)
