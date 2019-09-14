@@ -3,6 +3,7 @@ package br.com.programacaodinamica.sabedenada
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import br.com.programacaodinamica.sabedenada.model.Question
@@ -13,7 +14,20 @@ import br.com.programacaodinamica.sabedenada.model.question3
 class QuestionAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
 
     // dados para a RecyclerView
-    val items = mutableListOf<Question>(question1, question2, question3)
+    val items = mutableListOf<Question>(question1, question2, question3,
+        question1, question2, question3,
+        question1, question2, question3,
+        question1, question2, question3,
+        question1, question2, question3,
+        question1, question2, question3,
+        question1, question2, question3,
+        question1, question2, question3,
+        question1, question2, question3,
+        question1, question2, question3,
+        question1, question2, question3,
+        question1, question2, question3).apply {
+        shuffle()
+    }
 
     override fun getItemCount() = items.size
 //    override fun getItemCount(): Int {
@@ -32,11 +46,23 @@ class QuestionAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
         if (holder is QuestionViewHolder){
             val question = items[position]
             holder.questionTextView.text = question.text
+            holder.answerTextView.text = question.options[question.answer]
+
+            val icon = when(question.category){
+                "Matemática" -> R.drawable.ic_math_plus_1_black_24dp
+                "História" -> R.drawable.ic_history_black_24dp
+                "Esportes" -> R.drawable.ic_sport_run_black_24dp
+                else -> R.drawable.abc_btn_radio_material
+            }
+            holder.categoryIcon.setImageResource(icon)
+
         }
     }
 
     class QuestionViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         //itemView é o card (View) que será replicado na lista
         val questionTextView: TextView = itemView.findViewById(R.id.question_textview)
+        val answerTextView:TextView = itemView.findViewById(R.id.answer_textview)
+        val categoryIcon: ImageView = itemView.findViewById(R.id.category_icon)
     }
 }
