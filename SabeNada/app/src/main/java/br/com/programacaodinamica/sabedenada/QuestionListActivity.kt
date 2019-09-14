@@ -21,4 +21,6 @@ class QuestionListActivity : AppCompatActivity() {
         //                                    StaggeredGridLayoutManager.VERTICAL)
 
     }
+
+    
 }

@@ -7,9 +7,9 @@ class Question(val text: String,
 
     override fun toString(): String {
         // Representando apenas texto da pergunta e resposta certa
-        return "$text\n${options[answer]}"
+//        return "$text\n${options[answer]}"
         // Representando todos os atributos cada um em uma linha
-//        return "$text\n${options.joinToString("\n")}\n$answer\n$category"
+        return "$text\n${options.joinToString("\n")}\n$answer\n$category"
     }
 }
 

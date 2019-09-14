@@ -1,5 +1,6 @@
 package br.com.programacaodinamica.sabedenada
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -7,6 +8,11 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import br.com.programacaodinamica.sabedenada.model.Question
 import kotlinx.android.synthetic.main.activity_add_question.*
+import java.io.File
+import java.io.FileOutputStream
+
+
+const val QUESTION_FILE = "all_questions.txt"
 
 class AddQuestionActivity : AppCompatActivity() {
 
@@ -46,11 +52,23 @@ class AddQuestionActivity : AppCompatActivity() {
                 R.id.choice3_radiobutton -> 3
                 else -> -1
             }
+            clearForm()
             // próximo passo, encerrar formulário e construir pergunta
             val question = Question(text, options, answer, category)
             random_question_textview.text = "$question" //question.toString()
+            //salva pergunta no arquivo
+            saveQuestion(question)
 
         }
+    }
+
+    fun clearForm(){
+        question_input.setText("")
+        option0_edittext.setText("")
+        option1_edittext.setText("")
+        option2_edittext.setText("")
+        option3_edittext.setText("")
+        choices_radiogroup.clearCheck()
     }
 
 
@@ -70,6 +88,14 @@ class AddQuestionActivity : AppCompatActivity() {
             }
 
         }
+    }
+
+    fun saveQuestion(question: Question){
+        val file = File(filesDir, QUESTION_FILE)
+        FileOutputStream(file, true).use {
+            it.write("#\n$question\n".toByteArray())
+        }
+
     }
 
 }
