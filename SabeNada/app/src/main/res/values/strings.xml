@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SabeDeNada</string>
+    <string name="question_example_string">Qual time está no topo do Brasileirão?</string>
+    <string name="option1_example_string">Santos</string>
+    <string name="option2_example_string">Internacional</string>
+    <string name="option3_example_string">Flamengo</string>
+    <string name="option4_example_string">Santa Cruz</string>
+    <string name="confirmation_string">Confirmar</string>
 </resources>
