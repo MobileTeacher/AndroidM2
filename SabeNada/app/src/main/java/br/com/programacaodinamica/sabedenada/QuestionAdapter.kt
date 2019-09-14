@@ -14,19 +14,14 @@ import br.com.programacaodinamica.sabedenada.model.question3
 class QuestionAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
 
     // dados para a RecyclerView
-    val items = mutableListOf<Question>(question1, question2, question3,
-        question1, question2, question3,
-        question1, question2, question3,
-        question1, question2, question3,
-        question1, question2, question3,
-        question1, question2, question3,
-        question1, question2, question3,
-        question1, question2, question3,
-        question1, question2, question3,
-        question1, question2, question3,
-        question1, question2, question3,
-        question1, question2, question3).apply {
-        shuffle()
+    var items = mutableListOf<Question>()
+
+
+    fun setData(questions: MutableList<Question>){
+        items = questions
+        // notifica a RecyclerView que houve mudança nos dados
+        // e solicita que ela seja redesenhada
+        notifyDataSetChanged()
     }
 
     override fun getItemCount() = items.size
