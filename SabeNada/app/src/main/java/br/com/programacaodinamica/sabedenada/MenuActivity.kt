@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import kotlinx.android.synthetic.main.activity_menu.*
+import java.io.File
 
 class MenuActivity : AppCompatActivity() {
 
@@ -36,5 +37,9 @@ class MenuActivity : AppCompatActivity() {
             startActivity(Intent(this, AddQuestionActivity::class.java))
         }
 
+        clear_button.setOnClickListener {
+            val file = File(filesDir, QUESTION_FILE)
+            file.delete()
+        }
     }
 }
