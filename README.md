@@ -16,7 +16,8 @@ As perguntas serão armazenadas em arquivos de texto na memória do dispositivo 
 
 ### Canal Programação Dinâmica
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JAr0HkPz_Y8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Playlist Android Moderno](https://img.youtube.com/vi/wryGaCS5Q5I/maxresdefault.jpg)](https://www.youtube.com/watch?v=wryGaCS5Q5I&list=PL5TJqBvpXQv5Hllw8HJy7dUbCMGCvyquE&index=1)
+
 
 
 EXTRA:
