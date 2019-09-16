@@ -14,6 +14,10 @@ As perguntas serão armazenadas em arquivos de texto na memória do dispositivo 
 - Persistência em arquivos de texto. [Docs](https://developer.android.com/training/data-storage/files/internal?hl=pt-br)
 - Noções sobre multithreading. [Docs](https://developer.android.com/reference/kotlin/android/os/AsyncTask?hl=en)
 
+### Canal Programação Dinâmica
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JAr0HkPz_Y8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 EXTRA:
 
